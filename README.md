@@ -1,12 +1,12 @@
-# Face Recognition and Age Estimation Attendance System
+# Real-Time Face Recognition Attendance with Age Detection
 
 An automated attendance tracking system that uses machine learning and facial recognition to identify individuals and estimate age from webcam video streams in real-time.
 
-## 📋 Description
+## Description
 
 This project implements an intelligent attendance management system that leverages computer vision and machine learning to automate attendance tracking. The system captures video from a webcam, detects faces using DeepFace, identifies individuals using ensemble machine learning models, estimates their age, and automatically generates timestamped attendance records with saved frame evidence.
 
-## ✨ Features
+## Features
 
 - **Real-time Face Detection**: Uses DeepFace with OpenCV backend for accurate face detection
 - **Multi-Model Classification**: Trains and compares 11 different ML classifiers to find the best performing model
@@ -17,7 +17,7 @@ This project implements an intelligent attendance management system that leverag
 - **Model Comparison**: Evaluates multiple algorithms and selects the best performers
 - **Support for Multiple Identities**: Trained on multiple individuals (Dua, Jenna, Olivia, Taylor)
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3.x**
 - **OpenCV**: Computer vision and image processing
@@ -29,7 +29,7 @@ This project implements an intelligent attendance management system that leverag
 - **Matplotlib**: Data visualization
 - **Joblib**: Model serialization
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -38,7 +38,7 @@ Make sure you have Python 3.7+ installed on your system.
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/face-recognition-attendance-system.git
+git clone https://github.com/sofiazh0/Real-Time-Face-Recognition-Attendance-with-Age-Detection.git
 cd face-recognition-attendance-system
 ```
 
@@ -61,11 +61,11 @@ Place your training images in the `Training Data/` folder with the naming conven
 
 Update the `data_csv_file.csv` with image paths, identities, and ages.
 
-## 🚀 Usage
+## Usage
 
 ### Training the Models
 
-Run the Jupyter notebook `Assignment 3.ipynb` or execute the cells sequentially:
+Run the Jupyter notebook `Main.ipynb` or execute the cells sequentially:
 
 1. **Load and prepare the dataset**
 2. **Train multiple classifiers** (SVM, Random Forest, XGBoost, etc.)
@@ -130,7 +130,7 @@ The system will:
 
 ```
 face-recognition-attendance-system/
-├── Assignment 3.ipynb          # Main Jupyter notebook
+├── Main.ipynb          # Main Jupyter notebook
 ├── data_csv_file.csv           # Dataset with image paths and labels
 ├── best_classifier_model.pkl   # Saved classifier model
 ├── best_regressor_model.pkl    # Saved regressor model
@@ -148,7 +148,7 @@ face-recognition-attendance-system/
 └── README.md                   # This file
 ```
 
-## 🔍 How It Works
+## How It Works
 
 1. **Data Preparation**: Training images are loaded, resized to 32x32 pixels, converted to grayscale, and flattened
 2. **Model Training**: Multiple ML models are trained on the prepared dataset
@@ -158,7 +158,7 @@ face-recognition-attendance-system/
 6. **Attendance Logging**: Identified individuals are logged with timestamps
 7. **Frame Saving**: Annotated frames with bounding boxes and labels are saved
 
-## 🎯 Key Algorithms
+## Key Algorithms
 
 ### Classification
 - **Support Vector Machine (SVM)**: Linear kernel for face classification
@@ -172,7 +172,7 @@ face-recognition-attendance-system/
 - **Support Vector Regression**: Non-linear age estimation
 - **Linear Regression**: Baseline regression model
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Add support for more training data to improve accuracy
 - [ ] Implement deep learning models (CNNs) for better face recognition
@@ -185,28 +185,28 @@ face-recognition-attendance-system/
 - [ ] Add real-time notification system
 - [ ] Support for mask detection
 
-## 📝 Notes
+## Notes
 
 - The system processes 100 frames by default; adjust as needed
 - Webcam must be available and accessible
 - Training data quality significantly impacts model performance
 - TensorFlow warnings are suppressed for cleaner output
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [DeepFace](https://github.com/serengil/deepface) for face detection framework
 - scikit-learn for machine learning tools
 - OpenCV for computer vision capabilities
 
-## 📧 Contact
+## Contact
 
 For questions or suggestions, please open an issue on GitHub.
 
