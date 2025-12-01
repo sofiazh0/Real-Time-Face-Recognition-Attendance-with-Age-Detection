@@ -96,7 +96,7 @@ The system will:
 - `best_regressor_model.pkl`: Trained regression model
 - `label_encoder.pkl`: Label encoder for identity mapping
 
-## 📊 Model Performance
+## Model Performance
 
 ### Classification Models Tested
 
@@ -126,7 +126,7 @@ The system will:
 
 **Best Regressor**: Random Forest Regressor (MSE: 1.18)
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 face-recognition-attendance-system/
@@ -174,16 +174,16 @@ face-recognition-attendance-system/
 
 ## Future Improvements
 
-- [ ] Add support for more training data to improve accuracy
-- [ ] Implement deep learning models (CNNs) for better face recognition
-- [ ] Add face verification for enhanced security
-- [ ] Implement database integration for attendance records
-- [ ] Add web interface for easy access
-- [ ] Support for multiple camera streams
-- [ ] Add emotion detection
-- [ ] Implement attendance analytics and reporting
-- [ ] Add real-time notification system
-- [ ] Support for mask detection
+- Add support for more training data to improve accuracy
+- Implement deep learning models (CNNs) for better face recognition
+- Add face verification for enhanced security
+- Implement database integration for attendance records
+- Add web interface for easy access
+- Support for multiple camera streams
+- Add emotion detection
+- Implement attendance analytics and reporting
+- Add real-time notification system
+- Support for mask detection
 
 ## Notes
 
@@ -192,25 +192,9 @@ face-recognition-attendance-system/
 - Training data quality significantly impacts model performance
 - TensorFlow warnings are suppressed for cleaner output
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 - [DeepFace](https://github.com/serengil/deepface) for face detection framework
 - scikit-learn for machine learning tools
 - OpenCV for computer vision capabilities
-
-## Contact
-
-For questions or suggestions, please open an issue on GitHub.
-
----
-
-**Note**: This system is designed for educational purposes. For production use, consider additional security measures and privacy compliance (GDPR, CCPA, etc.).
 
